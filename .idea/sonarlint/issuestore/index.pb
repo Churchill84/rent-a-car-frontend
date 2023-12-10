@@ -81,8 +81,6 @@ I
 src/app/model/car.spec.ts,5\9\591ddb2caa8a48066021a323a4e992b39e6fc934
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
->
-src/index.html,5\c\5c975582791da6f060261188096d6aad85db6e09
 W
 'src/app/service/user-service.service.ts,2\3\236b5744e243bd8d6b6a7558c44d8135abf631ef
 E
@@ -91,3 +89,6 @@ J
 src/app/auth.guard.spec.ts,a\0\a0752af65c67f0ea634cfa074dfbb335317ea7e9
 A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
