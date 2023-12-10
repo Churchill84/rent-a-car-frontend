@@ -1,0 +1,57 @@
+<div class="car-list-container">
+  <h2>Car List</h2>
+
+  <!-- Search Component -->
+  <app-search (searchEvent)="handleSearch($event)" (createNewCarEvent)="openAddCarForm()"></app-search>
+
+  <!-- Table to Display Cars -->
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Model Year</th>
+      <th>Brand</th>
+      <th>Color</th>
+      <th>Capacity</th>
+      <th>Plate Number</th>
+      <th>Rate</th>
+      <th>Status</th>
+      <th>Last Modified</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let car of cars">
+      <td>{{ car.carId }}</td>
+      <td>{{ car.carName }}</td>
+      <td>{{ car.description }}</td>
+      <td>{{ car.carModelYear }}</td>
+      <td>{{ car.carBrand }}</td>
+      <td>{{ car.color }}</td>
+      <td>{{ car.capacity }}</td>
+      <td>{{ car.plateNumber }}</td>
+      <td>{{ car.rate }}</td>
+      <td>{{ car.carStatus }}</td>
+      <td>{{ formatLastModified(car.lastModified) }}</td>
+      <td>
+        <div class="dropdown">
+          <button class="drop_btn" (click)="toggleDropdown(car)">&#8942;</button> <!-- Three vertical dots -->
+          <div class="dropdown-content" *ngIf="openedDropdown === car">
+            <a (click)="openEditCarForm(car)">Edit</a>
+            <a (click)="deleteCar(car.carId)">Delete</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="modal" *ngIf="showCarForm">
+    <app-car-dialog
+      [carForm]="carForm"
+      (formSubmit)="handleFormSubmit($event)"
+      (close)="closeCarForm()">
+    </app-car-dialog>
+  </div>
+</div>

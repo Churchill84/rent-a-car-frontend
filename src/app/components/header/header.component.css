@@ -1,0 +1,38 @@
+/* Header styles */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Right-side content of the header */
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Logout Link Styling */
+.header-right a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.header-right a:hover {
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Style adjustments for small screens */
+@media screen and (max-width: 600px) {
+  .header-right {
+    margin-left: 10px;
+  }
+}

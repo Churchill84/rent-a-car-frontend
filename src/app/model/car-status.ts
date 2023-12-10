@@ -1,0 +1,6 @@
+export enum CarStatus {
+  AVAILABLE = "AVAILABLE",
+  RENTED = "RENTED",
+  RESERVED = "RESERVED",
+  OUT_OF_SERVICE = "OUT OF SERVICE"
+}

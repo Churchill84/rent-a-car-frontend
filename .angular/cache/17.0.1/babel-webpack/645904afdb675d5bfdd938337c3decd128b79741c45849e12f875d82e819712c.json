@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var CarStatus = /*#__PURE__*/function (CarStatus) {\n  CarStatus[\"AVAILABLE\"] = \"AVAILABLE\";\n  CarStatus[\"RENTED\"] = \"RENTED\";\n  CarStatus[\"RESERVED\"] = \"RESERVED\";\n  CarStatus[\"OUT_OF_SERVICE\"] = \"OUT OF SERVICE\";\n  return CarStatus;\n}(CarStatus || {});","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

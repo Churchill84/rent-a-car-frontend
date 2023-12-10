@@ -1,0 +1,81 @@
+/* Styles for the modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Adjust width as needed */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-column {
+  flex: 1; /* Each column takes equal width */
+  padding: 0 10px; /* Spacing between columns */
+}
+
+/* The close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styling form elements inside the modal */
+.modal-content form {
+  /* Add styles for your form elements */
+}
+
+.modal-content form div {
+  margin-bottom: 10px;
+}
+
+.modal-content form label {
+  display: block;
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="email"],
+.modal-content form select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-content form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content form button:hover {
+  background-color: #45a049;
+}
+
+.btn-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

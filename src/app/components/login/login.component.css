@@ -1,0 +1,74 @@
+/* Login Container */
+.login-container {
+  background-color: white;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Group */
+.login-container div {
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.login-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+/* Submit Button */
+.login-container button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Sign Up Button */
+.login-container button[type="button"] {
+  background-color: #6c757d; /* A neutral color for the sign-up button */
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+  margin-top: 1rem; /* Spacing between login and sign up buttons */
+}
+
+.login-container button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Error and Alert Messages */
+.error-message,
+.alert-danger {
+  color: #dc3545;
+  margin-top: 1rem;
+  text-align: left;
+}

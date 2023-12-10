@@ -1,0 +1,9 @@
+<div class="app-container">
+  <app-header></app-header>
+  <main>
+    <app-login *ngIf="!showSignUp && !isLoggedIn" (onSignUpClick)="handleSignUpClick()"></app-login>
+    <app-signup *ngIf="showSignUp && !isLoggedIn"></app-signup>
+    <router-outlet *ngIf="isLoggedIn"></router-outlet>
+  </main>
+  <app-footer></app-footer>
+</div>

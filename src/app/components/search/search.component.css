@@ -1,0 +1,47 @@
+/* Styles for the search component container */
+.search-component {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Styles for the 'Create New Car' button */
+.create-new-car-button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px; /* Space between the button and the search input */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-new-car-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the search input */
+.search-input {
+  flex-grow: 1; /* Take up available space */
+  padding: 10px;
+  margin-right: 10px; /* Space between the search input and the search button */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the search button */
+.search-button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

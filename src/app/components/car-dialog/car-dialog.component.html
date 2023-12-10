@@ -1,0 +1,67 @@
+<!-- car-dialog.component.html -->
+<div class="modal-content">
+  <form [formGroup]="carForm" (ngSubmit)="onSubmitCarForm()">
+    <input type="hidden" formControlName="carId">
+
+    <div class="form-row">
+      <div class="form-column">
+        <label for="carName">Car Name:</label>
+        <input type="text" class="form-control" id="carName" formControlName="carName">
+      </div>
+      <div class="form-column">
+        <label for="carModelYear">Model Year:</label>
+        <input type="text" class="form-control" id="carModelYear" formControlName="carModelYear">
+      </div>
+      <div class="form-column">
+        <label for="carBrand">Brand:</label>
+        <input type="text" class="form-control" id="carBrand" formControlName="carBrand">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-column">
+        <label for="description">Description:</label>
+        <input type="text" id="description" formControlName="description">
+      </div>
+      <div class="form-column">
+        <label for="color">Color:</label>
+        <input type="text" id="color" formControlName="color">
+      </div>
+      <div class="form-column">
+        <label for="capacity">Capacity:</label>
+        <input type="text" id="capacity" formControlName="capacity">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-column">
+        <label for="plateNumber">Plate Number:</label>
+        <input type="text" id="plateNumber" formControlName="plateNumber">
+      </div>
+      <div class="form-column">
+        <label for="rate">Rate:</label>
+        <input type="text" id="rate" formControlName="rate">
+      </div>
+      <div class="form-column">
+        <label for="carStatus">Status:</label>
+        <select id="carStatus" formControlName="carStatus">
+          <option value="" disabled>Select Status</option>
+          <option *ngFor="let status of CarStatus | keyvalue" [value]="status.key">
+            {{ status.value }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-column">
+        <label for="carImage">Car Image:</label>
+        <input type="file" id="carImage" (change)="onFileSelected($event)">
+        <img *ngIf="imageURL" [src]="imageURL" [alt]="carDescription" class="car-image-preview">
+      </div>
+    </div>
+    <div class="btn-holder">
+      <button type="submit">Save Car</button>
+      <button type="button" (click)="closeCarForm()">Cancel</button>
+    </div>
+  </form>
+</div>
